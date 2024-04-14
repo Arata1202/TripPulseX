@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* ヘッダー周り */
+header{
+    position:fixed;
+    display:flex;
+    height:45px;
+}
+.title{
+    position:fixed;
+    top: 0;
+    left: 0;
+    margin-top:0px;
+    background-color:skyblue;
+    color:white;
+    width:100%;
+}
+.title a{
+    color:white;
+    text-decoration:none;
+}
+
+/* メイン */
+h2{
+    text-align:center;
+    margin-top:80px;
+}
+h3{
+    text-align:center;
+    margin-top:40px;
+}
+.urls{
+    text-align:center;
+}
+button{
+    width:180px;
+    height:30px;
+    font-size:15px;
+    border-radius:5%;
+    color:white;
+    background-color:skyblue;
+}
+
+@media screen and (min-width: 767px){
+    
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* ヘッダー周り */
+header{
+    position:fixed;
+    display:flex;
+    height:45px;
+}
+.title{
+    position:fixed;
+    top: 0;
+    left: 0;
+    margin-top:0px;
+    background-color:skyblue;
+    color:white;
+    width:100%;
+}
+.title a{
+    color:white;
+    text-decoration:none;
+}
+
+/* メイン */
+.subtitle{
+    margin-top:80px;
+    text-align:center;
+}
+.box{
+    margin-bottom:80px;
+}
+.box h3{
+    text-align:center;
+    margin-bottom:0px;
+}
+.box p{
+    margin-top:5px;
+    text-align:center;
+}
+.smalltitle{
+    text-align:center;
+    margin-top:50px;
+}
+.flex_box{
+    text-align:center;
+}
+button{
+    height:30px;
+    font-size:15px;
+    border-radius:5%;
+    background-color:skyblue;
+    color:white;
+    border:none;
+    margin: auto;
+}
+.urls{
+    width:150px;
+    margin: auto;
+}
+
+@media screen and (min-width: 767px){
+    
+}

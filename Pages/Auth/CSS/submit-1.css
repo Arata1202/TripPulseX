@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* ヘッダー周り */
+header{
+    position:fixed;
+    display:flex;
+    height:45px;
+}
+.title{
+    position:fixed;
+    top: 0;
+    left: 0;
+    margin-top:0px;
+    background-color:skyblue;
+    color:white;
+    width:100%;
+}
+.title a{
+    color:white;
+    text-decoration:none;
+}
+
+/* メイン */
+.subtitle{
+    margin-top:80px;
+    text-align:center;
+}
+.box{
+    margin-top:40px;
+    text-align:center;
+}
+.flex_box h3{
+    margin-bottom:0px;
+}
+.require{
+    display:flex;
+    justify-content:center;
+}
+.red{
+    color:red;
+    font-size:10px;
+}
+.black{
+    font-size:10px;
+}
+.submit{
+    width:100px;
+    height:30px;
+    font-size:15px;
+    border-radius:5%;
+    background-color:skyblue;
+    color:white;
+    border:none;
+}
+.urls{
+    text-align:center;
+}
+button{
+    width:280px;
+    height:30px;
+    font-size:15px;
+    border-radius:5%;
+    color:black;
+    border:none;
+}
+input{
+    font-size: 16px;
+}
+form{
+    text-align: center;
+}
+.error-message{
+    font-size: 15px;
+    margin: 0 0 0 0;
+}
+
+/* ボールスイッチ */
+/* スイッチのスタイル */
+#toggleSwitch{
+    display: none;
+}
+.ball_switch{
+    margin-top: 10px;
+    text-align:center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;  /* 幅を小さく */
+  height: 20px; /* 高さを小さく */
+}
+
+/* スイッチのスライダー */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 20px; /* スライダー全体の角を丸くする */
+}
+
+/* スライダーの丸い部分 */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px; /* ボールの高さを小さく */
+  width: 16px; /* ボールの幅を小さく */
+  left: 2px;   /* ボールの位置微調整 */
+  bottom: 2px; /* ボールの位置微調整 */
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%; /* ボールの角を丸くする */
+}
+
+/* スライダーがオンのときのスタイル */
+input[type="checkbox"]:checked + .slider {
+  background-color: #2196F3;
+}
+
+/* ボールがオンのときのスタイル */
+input[type="checkbox"]:checked + .slider::before {
+  transform: translateX(20px); /* ボールが移動する距離を調整 */
+}
+
+@media screen and (min-width: 767px){
+    
+}

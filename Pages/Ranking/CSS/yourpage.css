@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+/* ヘッダー周り */
+.pcbox{
+    display:none;
+}
+.box{
+    margin-bottom: 80px;
+}
+header{
+    position:fixed;
+    display:flex;
+    height:45px;
+}
+.title{
+    position:fixed;
+    top: 0;
+    left: 0;
+    margin-top:0px;
+    background-color:skyblue;
+    color:white;
+    width:100%;
+}
+.title a{
+    color:white;
+    text-decoration:none;
+}
+.subtitle{
+    text-align:center;
+    margin-top:80px;
+    margin-bottom:0px;
+}
+
+/* メイン */
+.top h2{
+    margin-right:10px;
+    margin-top:48px;
+    text-align:center;
+}
+h2{
+    margin-top:40px;
+    text-align:center;
+}
+h3{
+    text-align:center;
+}
+.urls{
+    display:flex;
+    justify-content:center;
+}
+.out{
+    width:110px;
+    height:40px;
+    font-size:15px;
+    border-radius:5%;
+    color:black;
+    margin-left:10px;
+}
+.submit{
+    width:65px;
+    height:30px;
+    font-size:15px;
+    border-radius:5%;
+    background-color:skyblue;
+    color:white;
+}
+.button{
+    width:90px;
+    height:40px;
+    font-size:15px;
+    border-radius:5%;
+    color:black;
+    margin-left:10px;
+    border:none;
+    background-color: lightgray;
+}
+
+.iine{
+    display:flex;
+    margin-bottom:20px;
+}
+.like_many{
+    margin-left:auto;
+}
+.urls{
+    text-align:center;
+}
+.btn_s{
+    width:100px;
+    height:10px;
+    font-size:15px;
+    border-radius:5%;
+    background-color:skyblue;
+    color:white;
+    border:none;
+}
+
+/* ボトムメニュー */
+.under_menu{
+    display:flex;
+    position:fixed;
+    left:0;
+    bottom:0;
+    padding-left:0;
+    width:100%;
+    background:skyblue;
+    margin-bottom:0;
+    height:45px;
+    list-style:none;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.under_menu li{
+    table-layout:fixed;
+    width:100%;
+    padding:5px;
+    text-align:center;
+    color:white;
+    font-size:20px;
+}
+.under_menu li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* ハンバーガーメニュー */
+.btn{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    z-index: 9;
+}
+.btn i{
+    position: absolute;
+    left: 5px;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+}
+.btn i:nth-of-type(1){
+    top: 16px;
+}
+.btn i:nth-of-type(2){
+    top: 26px;
+}
+.btn i:nth-of-type(3){
+    top: 36px;
+}
+.btn.active i:nth-of-type(1){
+    transform: translateY(10px) rotate(45deg);
+}
+.btn.active i:nth-of-type(2){
+    opacity: 0;
+}
+.btn.active i:nth-of-type(3){
+    transform: translateY(-10px) rotate(-45deg);
+}
+.block{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+.block.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.list{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 30px;
+}
+.list ul{
+    list-style: none;
+    padding: 0px;
+}
+.list li{
+    padding: 0px 0px 0px 30px;
+    line-height: 10px;
+} 
+.list ul{
+    list-style:none;
+}
+h5{
+    margin-bottom:0px;
+}
+.list ul h5 a{
+    color:black;
+    text-decoration:none;
+}
+/* いいねボタンのスタイル */
+.likeButton {
+    background-color: lightpink; /* デフォルトの背景色 */
+    color: #fff; /* デフォルトのテキスト色 */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    min-height: 10px; /* ボタンの高さを維持 */
+}
+
+/* いいねされている場合のスタイル */
+.likeButton.liked {
+    background-color: #ccc !important; /* グレーの背景色 */
+    color: #000 !important; /* グレーのテキスト色 */
+    cursor: not-allowed; /* クリックできないようにする */
+}
+
+@media screen and (min-width: 767px) {
+    /* 写真表示部分 */
+    .box{
+        display:none !important;
+    }
+    .pcbox{
+        display:block;
+        width:30%;
+        margin:auto;
+        margin-bottom:80px;
+    }
+    .name{
+        text-align:left;
+        margin-top:0px;
+        margin-bottom:10px;
+    }
+    .spot{
+        display:flex;
+    }
+    .prefecture{
+        display:flex;
+        margin-left:auto;
+    }
+    .prefecture p{
+        margin-top:0px;
+        margin-bottom:10px;
+    }
+    .contents{
+        text-align:left;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .message{
+        text-align:left;
+    }
+    .many{
+        text-align:left;
+        margin-top:3px;
+    }
+    .submit{
+        width:85px;
+        height:30px;
+        font-size:15px;
+        border-radius:5%;
+        background-color:skyblue;
+        color:white;
+        border:none;
+    }
+    section{
+        margin-bottom:80px;
+    }
+    .iine{
+        display:flex;
+        margin-bottom:20px;
+    }
+    .urls{
+        text-align:center;
+    }
+    .btn_s{
+        width:100px;
+        height:30px;
+        font-size:15px;
+        border-radius:5%;
+        background-color:skyblue;
+        color:white;
+        border:none;
+    }
+    h2{
+        text-align:center;
+    }
+    h3{
+        text-align:center;
+    }
+    .under_menu{
+        display:flex;
+        position:fixed;
+        left:0;
+        bottom:0;
+        padding-left:0;
+        width:100%;
+        background:skyblue;
+        margin-bottom:0;
+        height:45px;
+        list-style:none;
+        padding-bottom: 0px;
+    }
+    
+}
